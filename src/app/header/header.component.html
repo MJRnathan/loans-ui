@@ -1,0 +1,164 @@
+<h1>Welcome to Loan Manager</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LMS</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            DashBoard
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <nav
+              class="sb-sidenav accordian sb-sidenav-dark"
+              id="sidenavAccordion"
+            >
+              <div class="sb-sidenav-menu">
+                <div class="list-group list-group-flush">
+                  <a href="dashboard" class="list-group-item">
+                    <span class="ms-2">Dash Board</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'loans'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Loans</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'customers'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Customers</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'payments'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Payments</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'invoices'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">In Voices</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'loan-types'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Loan Plans</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'reports'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Reports</span>
+                  </a>
+
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'settings'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Settings</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-1"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Settings
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <nav
+              class="sb-sidenav accordian sb-sidenav-dark"
+              id="sidenavAccordion"
+            >
+              <div class="sb-sidenav-menu">
+                <div class="list-group list-group-flush">
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'activity'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Activity</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'settings'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">Settings</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'logout'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">LogOut</span>
+                  </a>
+                  <a
+                    routerLinkActive="active"
+                    [routerLink]="'about'"
+                    class="list-group-item"
+                  >
+                    <span class="ms-2">About</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </ul>
+        </li>
+      </form>
+    </div>
+  </div>
+</nav>
